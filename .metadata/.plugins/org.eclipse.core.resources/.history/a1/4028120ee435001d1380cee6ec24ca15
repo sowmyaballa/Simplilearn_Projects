@@ -1,0 +1,10 @@
+package com.simplilearn.arraylist;
+
+public class RemoveAll_08 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

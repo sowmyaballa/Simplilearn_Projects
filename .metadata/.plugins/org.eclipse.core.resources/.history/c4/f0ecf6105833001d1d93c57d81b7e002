@@ -1,0 +1,38 @@
+package com.simplilearn.arrays;
+
+import java.util.Arrays;
+
+public class CommonNum3Arrays11 {
+
+	public static void main(String[] args) {
+		int a[] = { 2, 4, 8 };
+		int b[] = { 2, 3, 4, 8, 10, 16 };
+		int c[] = { 8,4, 14, 40 };
+		int i = 0, j = 0, k = 0;
+
+		Arrays.sort(a);
+		Arrays.sort(b);
+		Arrays.sort(c);
+		System.out.println("Common numbers are :");
+
+		while (i < a.length && j < b.length && k < c.length) {
+
+			if (a[i] == b[j] && b[j] == c[k]) {
+				System.out.print(a[i] + " ");
+				i++;
+				j++;
+				k++;
+			}
+
+			else if (a[i] < b[j])
+				i++;
+
+			else if (b[j] < c[k])
+				j++;
+
+			else
+				k++;
+		}
+	}
+
+}

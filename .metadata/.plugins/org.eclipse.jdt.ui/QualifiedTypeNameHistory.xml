@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.simplilearn.polymorphism.MethodOverload"/>
+    <fullyQualifiedTypeName name="com.simplilearn.inner.Outer"/>
+    <fullyQualifiedTypeName name="com.simplilearn.inner.Outer.Inner"/>
+    <fullyQualifiedTypeName name="com.simplilearn.inner.Outer.Inner.Depth"/>
+    <fullyQualifiedTypeName name="Inner"/>
+    <fullyQualifiedTypeName name="com.simplilearn.inner.LocalInnerClass"/>
+    <fullyQualifiedTypeName name="com.simplilearn.annonymous.Car"/>
+</qualifiedTypeNameHistroy>

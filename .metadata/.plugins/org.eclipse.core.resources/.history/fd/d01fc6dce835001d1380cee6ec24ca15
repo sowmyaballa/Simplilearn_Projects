@@ -1,0 +1,14 @@
+package com.simplilearn.methods;
+
+public class CountWords_04 {
+
+	public static void main(String[] args) {
+		String s = "The quick brown fox jumps over the lazy dog.";
+
+		    String[] words = s.trim().split("\s+");
+
+		    System.out.println("words count is = "+(words.length));
+
+	}
+
+}

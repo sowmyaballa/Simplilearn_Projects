@@ -1,0 +1,37 @@
+package com.simplilearn.arrays;
+
+import java.util.Arrays;
+
+public class Equality {
+
+	public static void main(String[] args) {
+		int arr1[] = { 1, 5, 3, 2, 7 };
+		int arr2[] = { 1, 5, 3, 2, 7 };
+		int i;
+
+		System.out.println("UsingArrays.equals "+ Arrays.equals(arr1, arr2));
+		boolean flag = false;
+
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
+		if (arr1.length != arr2.length)
+			flag = false;
+
+		for (i = 0; i < arr1.length; i++)
+			;
+		{
+			for (int j = 0; j < arr2.length; j++) {
+				if (arr1[i] == arr2[j]) {
+					flag = true;
+					break;
+				}
+			}
+			if (flag) {
+				System.out.println("matched");
+			} else {
+				System.out.println("not");
+			}
+		}
+	}
+
+}

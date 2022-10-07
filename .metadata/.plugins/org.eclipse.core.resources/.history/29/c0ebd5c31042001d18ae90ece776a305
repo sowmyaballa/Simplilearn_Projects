@@ -1,0 +1,17 @@
+package com.simplilearn.ds;
+
+public class LargestEleArray {
+
+	public static void main(String[] args) {
+		int arr[] = {4,2,8,1,5};
+		int temp =0;
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]>arr[i+1])
+				arr[i+1]=temp;
+			temp++;
+		}
+		System.out.println("Second largest");
+
+	}
+
+}

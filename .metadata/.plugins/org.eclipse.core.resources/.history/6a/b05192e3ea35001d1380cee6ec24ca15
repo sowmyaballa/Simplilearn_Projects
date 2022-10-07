@@ -1,0 +1,24 @@
+package com.simplilearn.methods;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class CountWords_04 {
+
+	public static void main(String[] args) {
+		String s = "The quick brown fox jumps over the lazy dog.";
+
+		String[] words = s.trim().split("\\s+");
+
+		System.out.println("words count is = "+(words.length));
+
+		Pattern p = Pattern.compile(" ");
+		Matcher matcher = p.matcher(s);
+		int count =1;
+		while(matcher.find()) {
+			count++;
+		}
+		System.out.println("Using Regex :" + count);
+	}
+
+}

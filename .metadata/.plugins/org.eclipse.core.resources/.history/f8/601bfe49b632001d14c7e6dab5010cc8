@@ -1,0 +1,23 @@
+package com.simplilearn.arrays;
+
+import java.util.Scanner;
+
+public class PairSumSpecifiedNum07 {
+	public static void main(String[] args) {
+		int a[] = {2,7, 4, -5, 11,5,20};
+		System.out.println("Enter number you want to sum");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int t1 = 0, t2=0;
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a.length;j++) {
+				if(a[i] + a[j+1] == n) {
+					t1 = a[i];
+					t2= a[j+1];
+				}
+			}
+			System.out.println(t1+t2);
+		}
+	}
+
+}

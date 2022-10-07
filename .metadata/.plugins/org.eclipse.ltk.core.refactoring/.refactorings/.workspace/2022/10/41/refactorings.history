@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SerializationDeser&apos; to &apos;SerializationDeserialization&apos;" description="Rename resource &apos;SerializationDeser&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SerializationDeser" name="SerializationDeserialization" stamp="1664684367634" updateReferences="true"/>
+</session>

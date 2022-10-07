@@ -1,0 +1,31 @@
+package com.wipro.eb.service;
+
+import com.wipro.eb.exception.InvalidConnectionException;
+import com.wipro.eb.exception.InvalidReadingException;
+
+public class ConnectionService  {
+	boolean result = false;
+	boolean conreading=false;
+	boolean contype=false;
+	public boolean validate(int currentReading, int previousReading, String type) throws InvalidReadingException, InvalidConnectionException {
+		if((currentReading < previousReading) || (currentReading<0) || (previousReading<0)) {
+			throw new InvalidReadingException();
+		}
+		else {
+			conreading=true;
+		}
+		if(!(type.equals("Domestic") || type.equals("Commercial"))) {
+			throw new InvalidConnectionException();
+		}
+		else {
+			contype=true;
+		}
+		
+		if(conreading&&contype) {
+		result = true;
+		}
+		return result;
+		
+	}
+
+}

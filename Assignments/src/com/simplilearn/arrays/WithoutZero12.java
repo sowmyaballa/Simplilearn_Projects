@@ -1,0 +1,27 @@
+package com.simplilearn.arrays;
+
+public class WithoutZero12 {
+
+	public static void main(String[] args) {
+		int a[] = {2,-1,6,9,0};
+		int c=0;
+		boolean flag = true;
+		
+		for(int i: a) {
+			if( i==0 || i== -1) {
+				c=i;
+				flag = false;
+				break;
+			}
+			
+		}
+		if(flag) {
+			System.out.println("No 0 or -1");
+		}
+		else {
+			System.out.println(c +" present in array");
+		}
+
+	}
+
+}

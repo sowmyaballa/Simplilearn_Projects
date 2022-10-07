@@ -1,0 +1,20 @@
+package com.simplilearn.serialization;
+
+public class Student {
+	private int sid;
+	private String sname;
+	private String subject;
+	public Student(int sid, String sname, String subject) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.subject = subject;
+	}
+	@Override
+	public String toString() {
+		return "Student [sid=" + sid + ", sname=" + sname + ", subject=" + subject + "]";
+	}
+	
+	
+
+}

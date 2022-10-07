@@ -1,0 +1,17 @@
+package com.simplilearn.methods;
+
+import java.util.Scanner;
+
+public class PrintMiddleChar_03 {
+
+	public static void main(String[] args) {
+		String s = "123456";
+		char[] str = s.toCharArray();
+		int length = str.length/2;
+		System.out.println(length);
+		System.out.println(3%2);
+		
+		}
+
+	
+}

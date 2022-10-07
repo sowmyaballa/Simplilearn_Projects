@@ -1,0 +1,15 @@
+package com.wipro.eb.entity;
+
+public class Domestic extends Connection {
+
+	public Domestic(int previousReading, int currentReading, float[] slabs) {
+		super(previousReading, currentReading, slabs);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public float computeBill() {
+		return 0;
+	}
+
+}

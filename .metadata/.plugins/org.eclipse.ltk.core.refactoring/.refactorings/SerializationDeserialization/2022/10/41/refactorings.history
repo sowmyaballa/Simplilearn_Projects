@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.simplilearn.serialization&apos; to &apos;com.simplilearn.serializationdemo&apos;&#x0D;&#x0A;- Original project: &apos;SerializationDeserialization&apos;&#x0D;&#x0A;- Original element: &apos;SerializationDeserialization/src/com.simplilearn.serialization&apos;&#x0D;&#x0A;- Renamed element: &apos;SerializationDeserialization/src/com.simplilearn.serializationdemo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.simplilearn.serialization&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.simplilearn.serialization" name="com.simplilearn.serializationdemo" qualified="false" references="true" stamp="1664685945545" textual="false" version="1.0"/>
+</session>

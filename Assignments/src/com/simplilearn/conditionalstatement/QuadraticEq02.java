@@ -1,0 +1,33 @@
+package com.simplilearn.conditionalstatement;
+
+import java.util.Scanner;
+
+public class QuadraticEq02 {
+
+	public static void main(String[] args) {
+		System.out.println("Enter a:");
+		Scanner sc = new Scanner(System.in);
+		double a = sc.nextDouble();
+		System.out.println("Enter b:");
+		double b = sc.nextDouble();
+		System.out.println("Enter c:");
+		double c = sc.nextDouble();
+
+		double d = b * b - 4.0 * a * c;
+
+		if (d > 0.0) {
+			double r1 = (-b + Math.pow(d, 0.5)) / (2 * a);
+			double r2 = (-b - Math.pow(d, 0.5)) / (2 * a);
+			System.out.println("Roots are " + r1 + "and" + r2);
+		} else if (d == 0) {
+			double r1 = -b / (2.0 * a);
+			System.out.println("Roots are" + r1);
+		}
+
+		else {
+			System.out.println("Roota are not real");
+		}
+
+	}
+
+}

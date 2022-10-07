@@ -1,0 +1,10 @@
+package com.wipro.eb.main;
+
+public class EBMain {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

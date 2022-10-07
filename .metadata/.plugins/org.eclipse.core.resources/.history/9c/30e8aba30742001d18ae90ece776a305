@@ -1,0 +1,18 @@
+package com.simplilearn.serialization;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class Serialization {
+	public static void main(String[] args) throws IOException {
+		Student s1 = new Student(1, "Sowmya", "Java");
+		FileOutputStream fo = new FileOutputStream("input"); //opens the file in write mode
+		ObjectOutputStream out = new ObjectOutputStream(fo);
+		out.writeObject(s1);
+		System.out.println("The write operation is done into file input");
+		out.close();
+		fo.close();
+	}
+
+}

@@ -1,0 +1,43 @@
+package com.simplilearn.arrays;
+
+public class CommonNum3Arrays11 {
+
+	public static void main(String[] args) {
+		int a[] = {2,4,8};
+		int b[] = {2,3,4,8,10,16};
+		int c[]= {4,8,14,40};
+		int i=0, j=0,k=0;
+		
+
+        // Iterate through three arrays while all arrays
+        // have elements
+        while (i < a.length && j < b.length
+               && k < c.length) {
+            // If x = y and y = z, print any of them and
+            // move ahead in all arrays
+            if (a[i] == b[j] && b[j] == c[k]) {
+                System.out.print(a[i] + " ");
+                i++;
+                j++;
+                k++;
+            }
+ 
+            // x < y
+            else if (a[i] < b[j])
+                i++;
+ 
+            // y < z
+            else if (b[j] < c[k])
+                j++;
+ 
+            // We reach here when x > y and z < y, i.e., z
+            // is smallest
+            else
+                k++;
+        }
+    }
+ 
+					
+		}
+	
+

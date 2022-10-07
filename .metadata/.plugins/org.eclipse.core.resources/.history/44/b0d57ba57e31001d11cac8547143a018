@@ -1,0 +1,10 @@
+package com.simplilearn.conditionalstatement;
+
+public class QuadraticEq02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

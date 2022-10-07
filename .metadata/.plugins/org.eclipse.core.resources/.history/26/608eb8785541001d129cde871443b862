@@ -1,0 +1,27 @@
+package com.simplilearn.filesex;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class FilesEx {
+
+	public static void main(String[] args) throws IOException {
+		String path = "D:\\Files";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the file in the directory of" + path);
+		String filename = sc.next();
+		// file
+		File f = new File(path + filename);
+		// create a new file
+		boolean b = f.createNewFile();
+		if(b!=true) {
+			System.out.println("File not created");
+		}
+		else {
+			System.out.println("File created successfully in path"+path);
+		}
+
+	}
+
+}
