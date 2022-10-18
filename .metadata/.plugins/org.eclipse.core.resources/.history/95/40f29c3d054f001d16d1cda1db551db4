@@ -30,9 +30,6 @@ public class LockedMe {
 
 			case 2: // Menu
 				
-				boolean value = true;
-				while(value) {
-				
 				System.out.println("\nEnter the option you want to perform \n 1. Add \n 2. Delete \n 3. Search \n 4. Go to Main Menu");
 				int submenu = sc.nextInt();
 				switch (submenu) {
@@ -94,15 +91,14 @@ public class LockedMe {
 					break;
 
 				case 4: // navigate to main menu
-					System.out.println("Navigate to main menu");
-					value = false;
+					
 					break;								
 				
 				default: System.out.println("Invalid option! Please check ");
-				break;
+				//break;
 				}
 			
-				}break;
+			
 			case 3: // Exit
 
 				System.exit(0);

@@ -94,15 +94,15 @@ public class LockedMe {
 					break;
 
 				case 4: // navigate to main menu
-					System.out.println("Navigate to main menu");
 					value = false;
 					break;								
 				
 				default: System.out.println("Invalid option! Please check ");
 				break;
-				}
+				
+			}break;
 			
-				}break;
+				}
 			case 3: // Exit
 
 				System.exit(0);
